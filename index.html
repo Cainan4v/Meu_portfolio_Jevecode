@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>jeveCode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Jeve<span class="blue">Code</span></h1>
+        </div>
+        <div class="menu">
+            <a onclick="scrollToSection('inicio')">Inicio</a>
+            <a onclick="scrollToSection('sobre')">Sobre</a>
+            <a onclick="scrollToSection('projetos')">Projetos</a>
+            <a onclick="scrollToSection('servicos')">Serviços</a>
+            <a id="contato" href="">Contato</a>
+        </div>
+        <button class="C-Menu" onclick="ChamarMenu()"><img src="img/menu-aberto.png"></button>
+        <div onclick="ChamarMenu()" id="Closesidebar" class="closeside"></div>
+        <div id="sidebar" class="sidebar">
+            <a onclick="scrollToSection('inicio')">Inicio</a>
+            <a onclick="scrollToSection('sobre')">Sobre</a>
+            <a onclick="scrollToSection('projetos')">Projetos</a>
+            <a onclick="scrollToSection('servicos')">Serviços</a>
+            <a href="">Contato</a>
+          </div>
+    </nav>
+    <header id="inicio" data-aos="fade-up">
+        <div class="introducao">
+            <h2>trasformo ideias em interfaces <span class="blue">modernas, responsivas e funcionais!</span></h2>
+            <p>freelanncer, denvolvedor front-end</p>
+            <div>
+                <a href="https://github.com/Cainan4v" target="_blank"><img src="img/github (1).png" alt="Github"></a>
+                <a href="https://www.instagram.com/c41n4n?igsh=dXo1dmU2aTFvcmxj" target="_blank"><img src="img/instagram (1).png" alt="Instagram"></a>
+            </div>
+        </div>
+    </header>
+    <div id="sobre" class="sobre"  data-aos="fade-right">
+        <div style="padding-bottom: 15%;">
+            <p class="p-at">sobre</p>
+        <h2 class="hp">Sobre mim</h2>
+        <p class="sobre-p">Opa! Meu nome e cainan jose, um recém freelancer chegado no mercado, desenvolvedor front-end com conhecimentos em avançados em tecnologias Web.</p>
+        <p class="sobre-p">Sou um estudante autoditada, que tem como pricipal foco o desenvolvimento web, onde procuro entregar sites modernos, responsivos e iterativos, e  para isso utilizo tecnologias como Html, Css, javaScript, Rect, Bootstrap, e SQL.</p>
+        <p class="sobre-p">Procuro sempre ser melhor, tanto no cotidiano quanto no desenvolvimento web. Passo grande parte do meu tempo estudando a procura de ser um profissional cada vez mais qualificado.</p><br>
+        </div>
+        <div class="letreiro">
+            <div class="faixa">
+              <img class="item" src="img/biblioteca(an).png" alt="React">
+              <img class="item" src="img/html(an).png" alt="Html">
+              <img class="item" src="img/css-3(an).png" alt="Css-3">
+              <img class="item" src="img/javascript(an).png" alt="javaScript">
+              <img class="item" src="img/tecnologia-de-ia(an).png" alt="Ai">
+              <img class="item" src="img/git(an).png" alt="Git">
+              <img class="item" src="img/plataforma-linux(an).png" alt="Linux">
+              <img class="item" src="img/bootstrap(an).png" alt="bootstrap">
+              <!-- Repetido para efeito de loop -->
+              <img class="item" src="img/biblioteca(an).png" alt="React">
+              <img class="item" src="img/html(an).png" alt="Html">
+              <img class="item" src="img/css-3(an).png" alt="Css-3">
+              <img class="item" src="img/javascript(an).png" alt="javaScript">
+              <img class="item" src="img/tecnologia-de-ia(an).png" alt="Ai">
+              <img class="item" src="img/git(an).png" alt="Git">
+              <img class="item" src="img/plataforma-linux(an).png" alt="Linux">
+              <img class="item" src="img/bootstrap(an).png" alt="bootstrap">
+            </div>
+          </div>
+    </div>
+    <div id="projetos" class="projetos" data-aos="fade-right">
+        <p class="p-at">projetos</p>
+        <h2 class="hp">De uma olhada em alguns dos meus projetos</h2><br><br>
+        <div class="center">
+            <div class="cards-fot">
+                <div class="cards">
+                    <img class="cards-img" src="img/Image_fx.jpg">
+                    <h3>ong por amor</h3>
+                    <p> este projeto foi feito em parceria com uma ong,  ong por amor com a contribuição de voluntarios e pessoas</p>
+                    <a href="">ver projeto</a>
+                    <div class="lang-p">
+                       <p>HTMl</p>
+                       <p>CSS</p>
+                       <p>javaScript</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img class="cards-img" src="img/Image_fx.jpg">
+                    <h3>ong por amor</h3>
+                    <p> este projeto foi feito em parceria com uma ong,  ong por amor com a contribuição de voluntarios e pessoas</p>
+                    <a href="">ver projeto</a>
+                    <div class="lang-p">
+                       <p>HTMl</p>
+                       <p>CSS</p>
+                       <p>javaScript</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img class="cards-img" src="img/Image_fx.jpg">
+                    <h3>ong por amor</h3>
+                    <p> este projeto foi feito em parceria com uma ong,  ong por amor com a contribuição de voluntarios e pessoas</p>
+                    <a href="">ver projeto</a>
+                    <div class="lang-p">
+                       <p>HTMl</p>
+                       <p>CSS</p>
+                       <p>javaScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="servicos" class="servicos"  data-aos="fade-right">
+        <p class="p-at">serviços</p>
+        <h2 class="hp">O que posso fazer por você?</h2>
+        <div class="center">
+            <div class="servc-fot">
+                <div class="servc-card">
+                    <img src="img/computador.png">
+                    <h3> criaçao de sites</h3>
+                    <p>faço de seus rascunhos e ideias sites com interfaces modernas e responsivas.</p>
+                    <hr>
+                    <a>saiba mais</a>
+                </div>
+                <div class="servc-card">
+                    <img src="img/pago-por-clique.png">
+                    <h3>Landing pages</h3>
+                    <p>construo Landing pages com design mederno, leve e iterativo. </p>
+                    <hr>
+                    <a>saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="fot-a">
+            <p><b>cainan jose</b><br>freelancer, dev front-end</p>
+        </div>
+        <div style="display: flex;justify-content: center;" class="fot-a">
+            <a href="https://github.com/Cainan4v" target="_blank" ><img src="img/github (1).png" alt="Github"></a>
+            <a href="https://www.instagram.com/c41n4n?igsh=dXo1dmU2aTFvcmxj" target="_blank"><img src="img/instagram (1).png" alt="Instagram"></a>
+        </div>
+        <div class="fot-a">
+            <p>© cainan jose 2025</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
