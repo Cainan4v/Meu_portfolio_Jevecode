@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    /*background-image: linear-gradient(25deg, #1f1f1f 20%, black 50%);*/
+    color: #353535;
+}
+nav{
+    background: #fffffff8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 0px 5px -2px;
+    position: fixed;
+    z-index: 10;
+}
+.logo{
+    flex: 30%;
+    margin-left: 10%;
+    text-align: left;
+}
+.logo h1{
+    font-size: 3rem;
+    line-height: 0;
+    font-family: "Bungee", sans-serif;
+}
+.blue{
+    color: #0099ff;
+}
+.menu{
+    text-align: right;
+    flex: 70%;
+    margin-right: 10%;
+}
+.menu a{
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    margin: 0px 0px 15px 15px;
+    cursor: pointer;
+}
+.menu a:hover{
+    color: #06666df8;
+    border-bottom: 5px solid #0099ff ;
+    transition: .1s;
+    border-radius: 4px;
+}
+header{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 7% 10% 10% 10%;
+}
+.introducao{
+    text-align: center;
+    flex: 100%;
+    text-align: center;
+    padding-top: 3rem;
+    max-width: 800px;
+    padding: 4%;
+}
+.introducao h2{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 45px;
+}
+.introducao p{
+    font-size: 1.4rem;
+    padding-bottom: 27%;
+}
+.introducao img{
+    height: 40px;
+    margin: 1%;
+}
+.sobre{
+    padding: 2% 10% 10% 10%;
+    line-height: 1.2 ;
+    background: linear-gradient(180deg, #f4fbfc 10%, #fdffff 70%);
+}
+.sobre-p{
+    font-size: 1.6rem;
+    text-indent: 50px;
+}
+.hp{
+    line-height: 1.3;
+    border-bottom: 5px solid #0099ff;
+    font-size: 2.45rem;
+}
+.projetos{
+    padding: 2% 10% 5% 10%;
+    width: 100%;
+}
+.cards-fot{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 1400px;
+    font-size: 1.7rem;
+    border: 1px solid green;
+}
+.cards{
+    border: 1px solid #90aab9;
+    background: white;
+    border-radius: 5%;
+    padding: 1.4rem;
+    max-width: 400px;
+    margin: 2%;
+    font-size: 1.15rem;
+    box-shadow: 0px 0px 9px -5px;
+    cursor: pointer;
+}
+.cards-img{
+    border-radius: 10px;
+    width: 100%;
+}
+.cards h3{
+    color: #0099ff;
+    font-size: 1.5rem;
+}
+.cards a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.9;
+    font-weight: 300;
+    line-height: 3;
+}
+.cards:hover{
+    transform: scale(1.02);
+    transition: .2s;
+}
+.cards a:hover{
+    text-decoration: underline;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+.servicos{
+    padding: 2% 10% 10% 10%;
+}
+.p-at{
+    color: #00b7c4;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.lang-p{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: 5%;
+}
+.lang-p p{
+    margin: 1%;
+    background: #0099ff;
+    font-weight: 600;
+    color: #001c1d;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: medium;
+}
+.servc-fot{
+    display: flex;
+    justify-content: center;
+    /*border: 1px solid black;*/
+    width: 100%;
+    margin: 5%;
+    flex-flow: row wrap;
+}
+.servc-card{
+    border: 1px solid #90aab9;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1%;
+    width: 230px;
+    margin: 1%;
+    box-shadow: 0px 0px 9px -5px;
+}
+.servc-card img{
+    border-radius: 7%;
+}
+.servc-card h3{
+    font-size: 20px;
+    color: #0099ff;
+}
+.servc-card:hover{
+    transform: scale(1.03);
+    transition: .3s;
+}
+footer{
+    border-top: 1px solid #e7e7e7;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    opacity: 0.85;
+    background: white;
+}
+.fot-a{
+    flex: 33%;
+    padding: 10px;
+}
+.fot-a img{
+    padding: 10px;
+    width: 50px;
+}
+
+.letreiro {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+  }
+  
+  .faixa {
+    display: flex;
+    gap: 25px;
+    animation: scroll 20s linear infinite;
+    width: fit-content;
+  }
+  
+  .item {
+    flex: 0 0 auto;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 139px;
+    text-align: center;
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+.C-Menu{
+    border: none;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 1%;
+    display: none;
+    margin-right: 5%;
+}
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar a {
+    font-weight: bold;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #90aab9;
+  }
+  .sidebar a:hover{
+    cursor: pointer;
+    background: #e6ebec;
+  }
+  .closeside{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #2727277e;
+    transition: 0.5;
+    display: none;
+  }
+  #contato{
+    font-size: 1.02rem;
+    background: #0099ff;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    margin-left: 5%;
+  }
+  #contato:hover{
+    background: #089cff;
+    color: #000000;
+    transition: .2s;
+  }

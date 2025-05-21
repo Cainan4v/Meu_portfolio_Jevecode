@@ -1,0 +1,174 @@
+@media (max-width: 1024px) {
+  .logo {
+    margin-left: 5%;
+  }
+  .menu {
+    margin-right: 5%;
+  }
+  .introducao h2 {
+    font-size: 2.6rem;
+  }
+  .introducao p {
+    font-size: 1.2rem;
+    padding-bottom: 20%;
+  }
+  .sobre-p {
+    font-size: 1.4rem;
+  }
+  header{
+    padding: 20% 10% 10% 10%;
+  }
+  .item {
+    min-width: 0px;
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    padding: 10px;
+  }
+  .menu {
+    display: none;
+  }
+  .C-Menu{
+    display: flex;
+  }
+  .logo h1 {
+    font-size: 2.5rem;
+  }
+
+  .menu a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    padding: 20% 5%;
+  }
+
+  .introducao h2 {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+
+  .introducao p {
+    font-size: 1rem;
+    padding-bottom: 10%;
+  }
+
+  .cards-fot {
+    align-items: center;
+  }
+  
+  .servicos{
+    padding: 2% 5% 5% 5%;
+  }
+
+  .servc-fot {
+    align-items: center;
+  }
+
+  .servc-card {
+    max-width: 200px;
+  }
+
+  .servc-card img{
+    max-width: 180px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .lang-p p{
+    font-size: small;
+  }
+
+  .fot-a {
+    flex: 100%;
+  }
+
+  .projetos{
+    padding: 2% 5% 0% 5%;
+  }
+
+  .sobre{
+    padding: 2% 5% 5% 5%;
+    line-height: 1.2 ;
+  }
+  .item {
+    min-width: 0px;
+    max-width: 110px;
+  }
+  .hp{
+    font-size: 1.90rem;
+  }
+  .sobre-p{
+   font-size: 1.4rem; 
+  }
+}
+
+@media (max-width: 500px) {
+  .introducao h2 {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .sobre-p {
+    font-size: 1.16rem;
+  }
+
+  .p-at {
+    font-size: 1rem;
+  }
+
+  .cards h3 {
+    font-size: 1.2rem;
+  }
+
+  .cards a {
+    font-size: 0.95rem;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+  }
+
+  .logo h1 {
+    font-size: 2rem;
+  }
+  .hp{
+    font-size: 1.7rem;
+  }
+  .introducao img{
+    height: 30px;
+  }
+  header{
+    padding: 30% 5% 5% 5%;
+  }
+  .C-menu img{
+    width: 10px;
+  }
+  .faixa {
+    gap: 5px
+  }
+  .servc-card{
+    font-size: small;
+  }
+  .servc-card h3{
+    font-size: 1rem;
+  }
+  .servc-card {
+    max-width: 170px;
+  }
+
+  .servc-card img{
+    max-width: 160px;
+  }
+  .C-Menu img{
+    width: 26px;
+  }
+}
