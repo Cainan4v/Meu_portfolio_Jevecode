@@ -1,19 +1,13 @@
-@media (max-width: 1024px) {
-  .logo {
-    margin-left: 5%;
-  }
-  .menu {
-    margin-right: 5%;
-  }
+@media (max-width: 1124px) {
   .introducao h2 {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
   }
   .introducao p {
     font-size: 1.2rem;
     padding-bottom: 20%;
   }
   .sobre-p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   header{
     padding: 20% 10% 10% 10%;
@@ -22,18 +16,26 @@
     min-width: 0px;
     max-width: 140px;
   }
+  .sobre-fot{
+    flex-flow: row wrap-reverse;
+  }
+  .sobre-content{
+    flex: auto;
+  }
+   .menu {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
   nav {
-    padding: 10px;
+    padding: 10px 5% 10px 5%;
   }
-  .menu {
-    display: none;
-  }
+
   .C-Menu{
     display: flex;
   }
+
   .logo h1 {
     font-size: 2.5rem;
   }
@@ -46,12 +48,11 @@
 
   header {
     flex-direction: column;
-    padding: 20% 5%;
+    padding: 20% 0%;
   }
 
   .introducao h2 {
-    font-size: 2rem;
-    line-height: 35px;
+    font-size: 2.4rem;
   }
 
   .introducao p {
@@ -72,7 +73,7 @@
   }
 
   .servc-card {
-    max-width: 200px;
+    min-width: 250px;
   }
 
   .servc-card img{
@@ -106,17 +107,27 @@
   .hp{
     font-size: 1.90rem;
   }
+  .point{
+    font-size: 1.90rem;
+  }
   .sobre-p{
    font-size: 1.4rem; 
+  }
+  #contato{
+    display: none;
+  }
+  #contato-mb{
+    display: block;
   }
 }
 
 @media (max-width: 500px) {
   .introducao h2 {
-    font-size: 1.5rem;
-    line-height: 1;
+    font-size: 1.9rem;
   }
-
+  .introducao{
+     padding: 16% 5% 20% 5%;
+  }
   .sobre-p {
     font-size: 1.16rem;
   }
@@ -141,7 +152,10 @@
     font-size: 2rem;
   }
   .hp{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+  }
+  .point{
+    font-size: 1.5rem;
   }
   .introducao img{
     height: 30px;
@@ -162,7 +176,7 @@
     font-size: 1rem;
   }
   .servc-card {
-    max-width: 170px;
+    min-width: 170px;
   }
 
   .servc-card img{

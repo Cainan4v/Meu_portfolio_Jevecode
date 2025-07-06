@@ -1,129 +1,212 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     margin: 0;
     font-family: "Nunito", sans-serif;
     /*background-image: linear-gradient(25deg, #1f1f1f 20%, black 50%);*/
     color: #353535;
+    background: white;
 }
+
 nav{
-    background: #fffffff8;
+    background: #fffffff1;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     justify-content: center;
     width: 100%;
     box-shadow: 0px 0px 5px -2px;
     position: fixed;
     z-index: 10;
+    padding-left: 10%;
+    padding-right: 10%;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
+
 .logo{
-    flex: 30%;
-    margin-left: 10%;
+    flex: 25%;
     text-align: left;
 }
+
 .logo h1{
     font-size: 3rem;
     line-height: 0;
     font-family: "Bungee", sans-serif;
+    cursor: pointer;
 }
+
 .blue{
     color: #0099ff;
 }
+
 .menu{
-    text-align: right;
-    flex: 70%;
-    margin-right: 10%;
+    text-align: center;
+    flex: 50%;
 }
+
 .menu a{
     text-decoration: none;
     padding: 15px;
-    color: black;
     font-weight: bold;
     margin: 0px 0px 15px 15px;
     cursor: pointer;
 }
+
 .menu a:hover{
     color: #06666df8;
     border-bottom: 5px solid #0099ff ;
     transition: .1s;
     border-radius: 4px;
 }
+
+.end-nav{
+    display: flex;
+    flex: 25%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-dark{
+    display: flex;
+    margin-left: 50%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease-in-out;
+    border-radius: 100px;
+    margin-right: 5%;
+}
+
+@keyframes transicao {
+  0%   { transform: scale(1); /*rotate: 0deg;*/ }
+  50%  { transform: scale(0.85);}
+  100% { transform: scale(1); /*rotate: 45deg*/ }
+}
+
+.btn-anim{
+    animation: transicao 0.7s ease;
+}
+
 header{
-    background: white;
+    background: linear-gradient(#ffffffb4, #f4fbfc), url(../img/Image_fx\ \(1\).png);
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 7% 10% 10% 10%;
+    padding: 8rem 10% 8rem 10%;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
+
 .introducao{
-    text-align: center;
     flex: 100%;
     text-align: center;
-    padding-top: 3rem;
     max-width: 800px;
-    padding: 4%;
+    padding: 10% 5% 5% 5%;
 }
+
 .introducao h2{
-    font-size: 3rem;
+    font-size: 3.4rem;
     font-weight: bold;
-    line-height: 45px;
+    line-height: 0px;
 }
+
 .introducao p{
     font-size: 1.4rem;
     padding-bottom: 27%;
 }
+
 .introducao img{
     height: 40px;
     margin: 1%;
 }
+
 .sobre{
-    padding: 2% 10% 10% 10%;
+    padding: 4rem 10% 8rem 10%;
     line-height: 1.2 ;
     background: linear-gradient(180deg, #f4fbfc 10%, #fdffff 70%);
 }
+
 .sobre-p{
-    font-size: 1.6rem;
+    font-size: 1.55rem;
     text-indent: 50px;
 }
+
+.sobre-fot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-content{
+    max-width: 630px;
+    flex: 40%;
+}
+
+.sobre-content img{
+    padding: 15%;
+    width: 100%;
+    border-radius: 50rem;
+}
+
 .hp{
     line-height: 1.3;
     border-bottom: 5px solid #0099ff;
     font-size: 2.45rem;
 }
+
+.hp-sty{
+    display: flex;
+}
+
+.point{
+    border-bottom: 5px dotted #0099ff;
+    width: 37px;
+    line-height: 1.3;
+    font-size: 2.45rem;
+}
+
 .projetos{
-    padding: 2% 10% 5% 10%;
+    padding: 4rem 10% 6rem 10%;
     width: 100%;
 }
+
 .cards-fot{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     width: 1400px;
     font-size: 1.7rem;
-    border: 1px solid green;
 }
+
 .cards{
-    border: 1px solid #90aab9;
-    background: white;
     border-radius: 5%;
-    padding: 1.4rem;
     max-width: 400px;
-    margin: 2%;
+    margin: 1%;
     font-size: 1.15rem;
-    box-shadow: 0px 0px 9px -5px;
+    box-shadow: 0px 0px 9px -6.5px;
     cursor: pointer;
+    background: #f7fbff;
 }
+
 .cards-img{
-    border-radius: 10px;
+    border-radius: 1.1rem 1.1rem 0 0;
     width: 100%;
+    height: 210px;
 }
+
+.padd{
+    padding: 1.4rem;
+}
+
 .cards h3{
     color: #0099ff;
     font-size: 1.5rem;
 }
+
 .cards a{
     text-decoration: none;
     color: black;
@@ -131,41 +214,50 @@ header{
     font-weight: 300;
     line-height: 3;
 }
+
 .cards:hover{
-    transform: scale(1.02);
+    transform: scale(1.015);
     transition: .2s;
 }
+
 .cards a:hover{
     text-decoration: underline;
 }
+
 .center{
     display: flex;
     justify-content: center;
-    border: 1px solid black;
 }
+
 .servicos{
-    padding: 2% 10% 10% 10%;
+    padding: 8rem 10% 8rem 10%;
+    width: 100%;
 }
+
 .p-at{
     color: #00b7c4;
     font-size: 1.5rem;
     font-weight: 300;
 }
+
 .lang-p{
     display: flex;
     align-items: center;
     flex-flow: row wrap;
     margin-top: 5%;
+    border-top: 2px solid #ececec;
 }
+
 .lang-p p{
-    margin: 1%;
+    margin: 6px 2px;
     background: #0099ff;
     font-weight: 600;
     color: #001c1d;
     border-radius: 50px;
     padding: 6px;
-    font-size: medium;
+    font-size: 1rem;
 }
+
 .servc-fot{
     display: flex;
     justify-content: center;
@@ -174,29 +266,35 @@ header{
     margin: 5%;
     flex-flow: row wrap;
 }
+
 .servc-card{
     border: 1px solid #90aab9;
     background: white;
     border-radius: 10px;
     text-align: center;
-    padding: 1%;
+    padding: 20px;
     width: 230px;
     margin: 1%;
     box-shadow: 0px 0px 9px -5px;
 }
+
 .servc-card img{
     border-radius: 7%;
+    color: red;
 }
+
 .servc-card h3{
-    font-size: 20px;
+    font-size: 1.1rem;
     color: #0099ff;
 }
+
 .servc-card:hover{
-    transform: scale(1.03);
+    transform: scale(1.01);
     transition: .3s;
 }
+
 footer{
-    border-top: 1px solid #e7e7e7;
+    border-top: 1px solid #e2e2e2;
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
@@ -207,10 +305,14 @@ footer{
     opacity: 0.85;
     background: white;
 }
+
 .fot-a{
+    display: flex;
+    justify-content: center;
     flex: 33%;
     padding: 10px;
 }
+
 .fot-a img{
     padding: 10px;
     width: 50px;
@@ -220,6 +322,7 @@ footer{
     width: 100%;
     overflow: hidden;
     padding: 10px 0;
+    margin-top: 10%;
   }
   
   .faixa {
@@ -228,8 +331,8 @@ footer{
     animation: scroll 20s linear infinite;
     width: fit-content;
   }
-  
-  .item {
+
+  .faixa img{
     flex: 0 0 auto;
     color: white;
     padding: 20px;
@@ -238,19 +341,19 @@ footer{
     text-align: center;
   }
   
+  
   @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
 .C-Menu{
     border: none;
-    background: white;
+    background: #ffffff00;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     margin: 1%;
     display: none;
-    margin-right: 5%;
 }
 .sidebar {
     height: 100%;
@@ -259,9 +362,9 @@ footer{
     top: 0;
     right: -250px;
     background-color: white;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    box-shadow: -2px 0 5px #00000033;
     padding-top: 60px;
-    transition: 0.3s;
+    transition: 0.3s;font: bold;
     z-index: 12;
     display: flex;
     flex-direction: column;
@@ -291,16 +394,139 @@ footer{
     display: none;
   }
   #contato{
+    text-decoration: none;
     font-size: 1.02rem;
     background: #0099ff;
     padding: 10px 20px 10px 20px;
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
     color: white;
-    margin-left: 5%;
+    font-weight: bold;
   }
   #contato:hover{
-    background: #089cff;
-    color: #000000;
+    color: #dbdbdb;
     transition: .2s;
   }
+  #contato-mb{
+    text-decoration: none;
+    background: #0099ff;
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    color: white;
+    margin: 0px 0px 15px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+  }
+  #contato-mb:hover{
+    color: #dbdbdb;
+    transition: .2s;
+  }
+  .destaque{
+    text-decoration: 2.3px underline;
+   text-decoration-color: #0099ff;
+  }
+  .word{
+    color: #0099ff;
+  }
+  .word::after {
+    color: #001c1d;
+    content: '|';
+    animation: blink 2s infinite;
+    margin-left: 5px;
+  }
+
+  @keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+  }
+  .w-contato{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+  }
+
+
+
+
+
+
+body.dark-theme {
+    background: #121212;
+    color: #EAEAEA;
+}
+
+body.dark-theme nav {
+    background: #131313fa;
+    box-shadow: 0px 0px 5px -2px #000000c9;
+    border-bottom: 1px solid #0099ff;
+}
+
+body.dark-theme .cards h3,
+body.dark-theme .cards a,
+body.dark-theme .p-at{
+    color: #00b7c4;
+}
+
+body.dark-theme .menu a:hover,
+body.dark-theme .cards a:hover,
+body.dark-theme .sidebar a:hover {
+    color: #80ffff;
+    background: #ffffff05;
+}
+
+body.dark-theme header {
+    background: linear-gradient(#1e1e1eb4, #1e1e1e), url(../img/Image_fx\ \(2\).png);
+    background-size: cover;
+}
+
+body.dark-theme .sobre {
+    background: linear-gradient(180deg, #1e1e1e 10%, #121212 70%);
+}
+
+body.dark-theme .projetos {
+    background: linear-gradient(#121212fd, #000914f5), url(../img/Image_fx\ \(3\).png);
+     background-size: cover;
+}
+
+body.dark-theme .servicos {
+    background: #000914;
+}
+
+body.dark-theme .cards {
+    background: #1f1f1f;
+    box-shadow: 0px 0px 9px -6.5px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-theme .lang-p p {
+    background: #00b7c4;
+    color: #001c1d;
+}
+
+body.dark-theme .servc-card {
+    background: #1a1a1a;
+    border-color: #3a3a3a;
+    box-shadow: 0px 0px 9px -5px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-theme footer {
+    background: #1a1a1a;
+    border-top: 1px solid #333;
+    color: #ccc;
+}
+
+body.dark-theme .sidebar {
+    background-color: #2b2b2b;
+}
+
+body.dark-theme #contato,
+body.dark-theme #contato-mb {
+    background: #00b7c4;
+}
+
+body.dark-theme .word::after {
+    color: #b8fdff ;
+}
+body.dark-theme .sidebar a {
+    color: #EAEAEA;
+}
