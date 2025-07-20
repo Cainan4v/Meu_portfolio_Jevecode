@@ -84,7 +84,7 @@ function darkMode() {
      btnImage.src = 'img/sol.png';
    }
   }
-  tempo = setTimeout( timeD, 300);
+  tempo = setTimeout( timeD, 200);
 
   const itemImg = document.querySelectorAll('.item');
 
